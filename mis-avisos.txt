@@ -1,0 +1,8 @@
+[AVISO] ID: 1792779562780 | Cliente: Instalación de calefacción - Calle Mayor | Tel: 600123456 | Trabajo: Revisión de caldera y purgado de radiadores | Fecha: 23/10/2026, 20:19:22
+[AVISO] ID: 1792779690080 | Cliente: Instalación de calefacción - Calle Mayor | Tel: 600123456 | Trabajo: Revisión de caldera y purgado de radiadores | Fecha: 23/10/2026, 20:21:30
+[AVISO] ID: 1792780053871 | Cliente: Instalación de calefacción - Calle Mayor | Tel: 600123456 | Trabajo: Revisión de caldera y purgado de radiadores | Fecha: 23/10/2026, 20:27:33
+[AVISO] ID: 1792780081608 | Cliente: Instalación de calefacción - Calle Mayor | Tel: 600123456 | Trabajo: Revisión de caldera y purgado de radiadores | Fecha: 23/10/2026, 20:28:01
+[AVISO] ID: 1792780176113 | Cliente: Instalación de calefacción - Calle Mayor | Tel: 600123456 | Trabajo: Revisión de caldera y purgado de radiadores | Fecha: 23/10/2026, 20:29:36
+[AVISO] ID: 1792780283750 | Cliente: Instalación de calefacción - Calle Mayor | Tel: 600123456 | Trabajo: Revisión de caldera y purgado de radiadores | Fecha: 23/10/2026, 20:31:23
+[AVISO] ID: 1792780383555 | Cliente: Repuestos del Norte | Trabajo: Sustitución de válvula de seguridad | Fecha: 23/10/2026, 20:33:03
+[AVISO] ID: 1792780632020 | Cliente: Fontanería Sur | Trabajo: Reparación de llave de paso general | Fecha: 23/10/2026, 20:37:12
