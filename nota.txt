@@ -1,1 +1,2 @@
 Segunda prueba: Modificando la nota desde Node.js.
+Prueba de sincronización con GitHub completada con éxito.
