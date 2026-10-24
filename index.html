@@ -8,34 +8,41 @@
 </head>
 <body>
 
-   <!-- Encabezado y Navegación -->
-   <header>
-    <h1>Fernando García Sánchez</h1>
-    <nav>
-        <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#elegirnos">Por qué elegirnos</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-        </ul>
-    </nav>
-</header>
+    <!-- Menú Integrado sobre la foto -->
+    <header class="header-transparente">
+        <div class="logo">
+            <strong>Fernando García Sánchez</strong>
+            <span>Fontanería & Calefacción</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#elegirnos">Por qué elegirnos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="tel:34600000000" class="btn-telefono-header">📞 Llamar Directo</a>
+    </header>
 
-  <!-- Portada Principal a Ancho Completo -->
-<div id="inicio" class="portada-hero">
-    <h1>Servicios Profesionales de Fontanería y Calefacción</h1>
-    
-    <div class="portada-foto-full">
-        <img src="img/fernando1.jpg" alt="Fernando García Sánchez realizando soldadura de calefacción y fontanería en Zaragoza">
-    </div>
-
-    <p>Soluciones rápidas, eficaces y garantizadas en Zaragoza</p>
-    
-    <a href="#contacto" class="btn-presupuesto">Solicitar Presupuesto</a>
-</div>
+    <!-- Portada Principal a Pantalla Completa Real -->
+    <section id="inicio" class="hero-impacto">
+        <div class="hero-capa-oscura">
+            <div class="hero-contenido">
+                <span class="badge-exp">✓ Más de 30 años de experiencia en Zaragoza</span>
+                <h1>Servicios Profesionales de Fontanería y Calefacción</h1>
+                <p>Reparaciones e instalaciones de confianza, urgencias y proyectos a medida.</p>
+                
+                <div class="hero-botones">
+                    <a href="#contacto" class="btn-rojo">Solicitar Presupuesto</a>
+                    <a href="https://wa.me/34600000000" class="btn-verde-hero" target="_blank">💬 WhatsApp Directo</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Sección de Servicios -->
-    <section id="servicios">
+    <section id="servicios" class="seccion-contenedor">
         <h2>Nuestros Servicios</h2>
         <div class="servicios-grid">
             <div class="tarjeta">
@@ -54,26 +61,26 @@
     </section>
 
     <!-- Sección Por Qué Elegirnos -->
-    <section id="elegirnos">
+    <section id="elegirnos" class="seccion-contenedor">
         <h2>Por qué elegirnos</h2>
         <div class="servicios-grid">
             <div class="tarjeta">
-                <h3>Experiencia Garantizada</h3>
-                <p>Más de 30 años de oficio realizando instalaciones y reparaciones con la máxima profesionalidad.</p>
+                <h3>Oficio Real</h3>
+                <p>Décadas de trabajo garantizan soluciones definitivas y acabados de máxima calidad técnica.</p>
             </div>
             <div class="tarjeta">
-                <h3>Atención Directa</h3>
-                <p>Trato personal, sincero y sin intermediarios para ofrecerte la mejor solución a tu problema.</p>
+                <h3>Trato Directo</h3>
+                <p>Sin intermediarios ni comisiones de agencias. Hablas y tratas directamente con el profesional.</p>
             </div>
             <div class="tarjeta">
-                <h3>Rapidez y Eficacia</h3>
-                <p>Respuesta ágil ante cualquier avería de fontanería o calefacción en Zaragoza.</p>
+                <h3>Respuesta Eficaz</h3>
+                <p>Atención rápida para cualquier incidencia técnica en Zaragoza y alrededores.</p>
             </div>
         </div>
     </section>
 
     <!-- Sección de Contacto -->
-    <section id="contacto">
+    <section id="contacto" class="seccion-contenedor">
         <h2>Solicita tu Presupuesto</h2>
         <form>
             <div class="campo">
@@ -86,7 +93,7 @@
             </div>
             <div class="campo">
                 <label for="mensaje">Mensaje o avería:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Describe brevemente lo que necesitas..."></textarea>
+                <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Describe brevemente qué necesitas..."></textarea>
             </div>
             <button type="submit">Enviar Solicitud</button>
         </form>
@@ -94,11 +101,11 @@
 
     <!-- Pie de página -->
     <footer>
-        <p>&copy; 2026 Fernando García Sánchez - Fontanería y Calefacción en Zaragoza. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Fernando García Sánchez - Fontanería y Calefacción en Zaragoza.</p>
     </footer>
 
     <!-- Botón Flotante de WhatsApp -->
-    <a href="https://wa.me/34600000000?text=Hola,%20necesito%20información%20sobre%20un%20servicio%20de%20fontanería" class="btn-whatsapp" target="_blank" title="Contactar por WhatsApp">
+    <a href="https://wa.me/34600000000" class="btn-whatsapp" target="_blank" title="Contactar por WhatsApp">
         💬 WhatsApp
     </a>
 
