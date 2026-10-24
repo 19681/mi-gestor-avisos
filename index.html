@@ -3,29 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Sitio Web Profesional</title>
-    <!-- Vinculamos el archivo CSS -->
+    <title>Fernando García Sánchez | Fontanería y Calefacción Zaragoza</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Encabezado con menú -->
+    <!-- Encabezado -->
     <header>
-        <h1>Mi Proyecto Web</h1>
+        <div class="logo">
+            <h1>Fernando García Sánchez</h1>
+            <p>Fontanería y Calefacción en Zaragoza</p>
+        </div>
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#experiencia">Por qué elegirnos</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Presentación principal -->
+    <!-- Banner Principal -->
     <div id="inicio" class="hero">
-        <h2>Desarrollo y Soluciones Web</h2>
-        <p>Páginas modernas, rápidas y adaptadas a cualquier dispositivo.</p>
-        <a href="#contacto" class="boton-cta">Contactar ahora</a>
+        <h2>Servicios Profesionales de Fontanería y Calefacción</h2>
+        <p>Instalaciones, reparaciones de averías, mantenimientos y certificados oficiales en Zaragoza.</p>
+        <a href="#contacto" class="boton-cta">Pedir Presupuesto Sin Compromiso</a>
     </div>
 
     <!-- Sección de Servicios -->
@@ -33,43 +36,75 @@
         <h2>Nuestros Servicios</h2>
         <div class="servicios-grid">
             <div class="tarjeta">
-                <h3>Diseño Web</h3>
-                <p>Creación de páginas atractivas, claras y adaptadas a móviles y tablets.</p>
+                <h3>🛠️ Fontanería General</h3>
+                <p>Reparación de fugas, desatascos, cambio de tuberías, grifería y sanitarios.</p>
             </div>
             <div class="tarjeta">
-                <h3>Gestión de Avisos</h3>
-                <p>Sistemas organizados para llevar el control de avisos y clientes al instante.</p>
+                <h3>🔥 Calefacción y Radiadores</h3>
+                <p>Mantenimiento de circuitos, purgado, sustitución de radiadores y reparación de fugas.</p>
             </div>
             <div class="tarjeta">
-                <h3>Mantenimiento</h3>
-                <p>Actualización continua y copia de seguridad de tus datos en la nube.</p>
+                <h3>📜 Certificados y Boletines</h3>
+                <p>Revisiones de instalaciones con certificación oficial RITE para agua y calefacción.</p>
+            </div>
+            <div class="tarjeta">
+                <h3>❄️ Climatización y Reformas</h3>
+                <p>Instalación de aire acondicionado, reformas de baños y mantenimiento de equipos.</p>
             </div>
         </div>
     </section>
 
-    <!-- Sección de Contacto -->
+    <!-- Por qué elegirnos -->
+    <section id="experiencia" class="seccion-destacada">
+        <h2>Garantía y Profesionalidad</h2>
+        <div class="puntos-clave">
+            <div class="punto">
+                <h4>+30 Años de Experiencia</h4>
+                <p>Trabajos ejecutados con oficio, precisión y máxima calidad técnica.</p>
+            </div>
+            <div class="punto">
+                <h4>Presupuesto Transparente</h4>
+                <p>Valoración directa sin sorpresas ni costes ocultos en cada intervención.</p>
+            </div>
+            <div class="punto">
+                <h4>Atención en Zaragoza</h4>
+                <p>Cobertura de instalaciones y averías en Zaragoza capital y alrededores.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto -->
     <section id="contacto">
-        <h2>Contacto</h2>
+        <h2>Solicitar Presupuesto o Consulta</h2>
         <form action="#" method="POST">
             <div class="campo">
-                <label for="nombre">Nombre:</label>
+                <label for="nombre">Nombre completo:</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
             </div>
             <div class="campo">
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                <label for="telefono">Teléfono de contacto:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej: 600 000 000" required>
             </div>
             <div class="campo">
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu consulta..." required></textarea>
+                <label for="servicio">Tipo de trabajo:</label>
+                <select id="servicio" name="servicio">
+                    <option value="fontaneria">Fontanería general</option>
+                    <option value="calefaccion">Calefacción / Radiadores</option>
+                    <option value="boletin">Boletín / Certificado RITE</option>
+                    <option value="otro">Otro tipo de avería o instalación</option>
+                </select>
             </div>
-            <button type="submit">Enviar Mensaje</button>
+            <div class="campo">
+                <label for="mensaje">Detalles del aviso o consulta:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Explícanos brevemente qué necesitas..." required></textarea>
+            </div>
+            <button type="submit">Enviar Solicitud</button>
         </form>
     </section>
 
     <!-- Pie de página -->
     <footer>
-        <p>&copy; 2026 Mi Proyecto Web. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Fernando García Sánchez - Fontanería y Calefacción Zaragoza. Todos los derechos reservados.</p>
     </footer>
 
 </body>
