@@ -8,21 +8,32 @@
 </head>
 <body>
 
-    <!-- Menú Integrado sobre la foto -->
-    <header class="header-transparente">
-        <div class="logo">
-            <strong>Fernando García Sánchez</strong>
-            <span>Fontanería & Calefacción</span>
+    <!-- Cabecera Fija de Borde a Borde con Menú Hamburguesa -->
+    <header class="header-principal">
+        <div class="header-contenedor">
+            <div class="logo">
+                <h1>Fernando García Sánchez</h1>
+                <p>Fontanería & Calefacción</p>
+            </div>
+
+            <!-- Botón Hamburguesa para Móviles -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">
+                ☰
+            </button>
+
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#galeria">Trabajos</a></li>
+                    <li><a href="#elegirnos">Por qué elegirnos</a></li>
+                    <li><a href="#faq">Dudas</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <a href="tel:600000000" class="btn-llamar">Llamar Directo</a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#elegirnos">Por qué elegirnos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-        <a href="tel:34600000000" class="btn-telefono-header">📞 Llamar Directo</a>
     </header>
 
     <!-- Portada Principal a Pantalla Completa Real -->
@@ -36,6 +47,61 @@
                 <div class="hero-botones">
                     <a href="#contacto" class="btn-rojo">Solicitar Presupuesto</a>
                     <a href="https://wa.me/34600000000" class="btn-verde-hero" target="_blank">💬 WhatsApp Directo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Franja de Marcas de Confianza -->
+    <section class="seccion-marcas">
+        <div class="marcas-contenedor">
+            <p class="marcas-titulo">Trabajamos con las principales marcas del sector:</p>
+            <div class="marcas-grid">
+                <span class="marca-tag">Vaillant</span>
+                <span class="marca-tag">Junkers / Bosch</span>
+                <span class="marca-tag">Saunier Duval</span>
+                <span class="marca-tag">Roca</span>
+                <span class="marca-tag">Baxi</span>
+                <span class="marca-tag">Grohe</span>
+                <span class="marca-tag">Orkli</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Trabajos Reales / Galería -->
+    <section id="galeria" class="seccion-contenedor">
+        <h2>Trabajos Reales y Garantizados</h2>
+        <p class="galeria-subtitulo">Ejemplos de intervenciones recientes en Zaragoza</p>
+        
+        <div class="galeria-grid">
+            <div class="galeria-card">
+                <div class="galeria-img-placeholder">
+                    <!-- Aquí pondrás tu foto real de la obra -->
+                    <span>📸 Foto: Cambio de Bañera por Plato de Ducha</span>
+                </div>
+                <div class="galeria-info">
+                    <h3>Sustitución de Bañera por Plato de Ducha</h3>
+                    <p>Modernización del cuarto de baño, impermeabilización y adaptación de desagües con acabados profesionales.</p>
+                </div>
+            </div>
+
+            <div class="galeria-card">
+                <div class="galeria-img-placeholder">
+                    <span>📸 Foto: Reforma de Tuberías</span>
+                </div>
+                <div class="galeria-info">
+                    <h3>Renovación de Red de Tuberías</h3>
+                    <p>Actualización completa de instalaciones de fontanería en vivienda y comunidades para evitar fugas y ganar presión.</p>
+                </div>
+            </div>
+
+            <div class="galeria-card">
+                <div class="galeria-img-placeholder">
+                    <span>📸 Foto: Sala de Calderas / Radiadores</span>
+                </div>
+                <div class="galeria-info">
+                    <h3>Instalación de Calefacción y Calderas</h3>
+                    <p>Montaje de sistemas de calefacción, radiadores y optimización de rendimiento energético bajo normativa RITE.</p>
                 </div>
             </div>
         </div>
@@ -79,35 +145,188 @@
         </div>
     </section>
 
-    <!-- Sección de Contacto -->
-    <section id="contacto" class="seccion-contenedor">
-        <h2>Solicita tu Presupuesto</h2>
-        <form>
-            <div class="campo">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+    <!-- Sección de Preguntas Frecuentes (FAQ) -->
+    <section id="faq" class="seccion-contenedor">
+        <h2>Preguntas Frecuentes</h2>
+        <p class="faq-subtitulo">Resolvemos tus dudas antes de contratar o solicitar tu presupuesto</p>
+
+        <div class="faq-lista">
+            <div class="faq-item">
+                <button class="faq-pregunta">
+                    <span>¿Ofrecéis presupuestos sin compromiso?</span>
+                    <span class="faq-icono">+</span>
+                </button>
+                <div class="faq-respuesta">
+                    <p>Sí, por supuesto. Evaluamos tu necesidad o avería y te proporcionamos un presupuesto detallado y transparente sin ningún tipo de compromiso.</p>
+                </div>
             </div>
-            <div class="campo">
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required placeholder="Tu número de teléfono">
+
+            <div class="faq-item">
+                <button class="faq-pregunta">
+                    <span>¿Qué garantía tienen las reparaciones e instalaciones?</span>
+                    <span class="faq-icono">+</span>
+                </button>
+                <div class="faq-respuesta">
+                    <p>Todas nuestras instalaciones y reparaciones cuentan con garantía por escrito según la normativa vigente, utilizando materiales de primera calidad y ejecutados bajo acreditación oficial RITE.</p>
+                </div>
             </div>
-            <div class="campo">
-                <label for="mensaje">Mensaje o avería:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Describe brevemente qué necesitas..."></textarea>
+
+            <div class="faq-item">
+                <button class="faq-pregunta">
+                    <span>¿Atendéis urgencias de fontanería el mismo día en Zaragoza?</span>
+                    <span class="faq-icono">+</span>
+                </button>
+                <div class="faq-respuesta">
+                    <p>Sí, atendemos avisos urgentes en Zaragoza capital y alrededores. Ante fugas, roturas o averías en la calefacción, te ofrecemos una respuesta e intervención rápida para solucionar el problema lo antes posible.</p>
+                </div>
             </div>
-            <button type="submit">Enviar Solicitud</button>
-        </form>
+        </div>
     </section>
 
-    <!-- Pie de página -->
-    <footer>
-        <p>&copy; 2026 Fernando García Sánchez - Fontanería y Calefacción en Zaragoza.</p>
-    </footer>
+    <!-- Script para desplegar/plegar el acordeón -->
+    <script>
+        document.querySelectorAll('.faq-pregunta').forEach(boton => {
+            boton.addEventListener('click', () => {
+                const faqItem = boton.parentElement;
+                faqItem.classList.toggle('activo');
+            });
+        });
+    </script>
+
+    <!-- Sección de Contacto Cumpliendo RGPD -->
+    <section id="contacto" class="seccion-contenedor">
+        <h2>Contacto y Presupuesto</h2>
+        <p class="contacto-subtitulo">Pide tu presupuesto sin compromiso o consúltanos cualquier duda</p>
+
+        <div class="contacto-wrapper">
+            <!-- Remplaza la URL de Formspree por tu código cuando te registres -->
+            <form action="https://formspree.io/f/TU_CODIGO_AQUI" method="POST" class="formulario-contacto">
+                <div class="campo">
+                    <label for="nombre">Nombre completo *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Teléfono de contacto *</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Ej. 600 000 000" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Detalle de la avería o trabajo *</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Describe brevemente qué necesitas (reparación, cambio de caldera, instalación...)" required></textarea>
+                </div>
+
+                <!-- Casilla RGPD Obligatoria -->
+                <div class="campo-rgpd">
+                    <input type="checkbox" id="privacidad" name="privacidad" required>
+                    <label for="privacidad">
+                        He leído y acepto la <a href="#privacidad-modal" class="link-privacidad">Política de Privacidad</a> *
+                    </label>
+                </div>
+
+                <button type="submit" class="btn-enviar">Enviar Solicitud de Presupuesto</button>
+
+                <!-- Coletilla Informativa RGPD (Primera Capa) -->
+                <div class="coletilla-rgpd">
+                    <small>
+                        <strong>Responsable:</strong> Fernando García Sánchez | 
+                        <strong>Finalidad:</strong> Atender su solicitud de presupuesto o consulta | 
+                        <strong>Legitimación:</strong> Consentimiento del interesado | 
+                        <strong>Derechos:</strong> Puede ejercer sus derechos de acceso, rectificación y supresión contactando con nosotros.
+                    </small>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Modal / Bloque de Política de Privacidad y Aviso Legal -->
+    <div id="privacidad-modal" class="modal-legal">
+        <div class="modal-contenido">
+            <a href="#contacto" class="cerrar-modal">&times;</a>
+            <h3>Política de Privacidad y Aviso Legal</h3>
+            <p><strong>1. Responsable del Tratamiento:</strong> Fernando García Sánchez (Fontanería y Calefacción Zaragoza).</p>
+            <p><strong>2. Finalidad:</strong> Los datos personales facilitados a través de este formulario serán utilizados exclusivamente para gestionar, responder y enviar presupuestos o información relativa a nuestros servicios de fontanería, calefacción y reformas.</p>
+            <p><strong>3. Conservación:</strong> Los datos se conservarán durante el tiempo necesario para atender la solicitud o prestar el servicio contratado, cumpliendo con las obligaciones legales aplicables.</p>
+            <p><strong>4. Cesión a terceros:</strong> No se cederán datos a terceros, salvo obligación legal o para la gestión técnica del envío de mensajes (servidores de correo/Formspree).</p>
+            <p><strong>5. Derechos:</strong> Puede solicitar el acceso, rectificación, cancelación o supresión de sus datos dirigiéndose directamente por teléfono o correo electrónico al titular del sitio web.</p>
+            <a href="#contacto" class="btn-cerrar-legales">Entendido</a>
+        </div>
+    </div>
+
+    
 
     <!-- Botón Flotante de WhatsApp -->
     <a href="https://wa.me/34600000000" class="btn-whatsapp" target="_blank" title="Contactar por WhatsApp">
         💬 WhatsApp
     </a>
+
+<!-- Pie de Página Legal y Corporativo -->
+<footer class="footer-legal">
+    <div class="footer-contenido">
+        <p><strong>Fernando García Sánchez</strong> - Fontanería y Calefacción en Zaragoza</p>
+        <p class="footer-acreditacion">Instalador Autorizado RITE | Trabajos Garantizados</p>
+        
+        <div class="footer-links-legales">
+            <a href="#aviso-legal-modal">Aviso Legal</a> | 
+            <a href="#privacidad-modal">Política de Privacidad</a> | 
+            <a href="#cookies-modal">Política de Cookies</a>
+        </div>
+
+        <p class="footer-copy">&copy; 2026 Fernando García Sánchez. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<!-- MODAL 1: Aviso Legal (LSSI-CE) -->
+<div id="aviso-legal-modal" class="modal-legal">
+    <div class="modal-contenido">
+        <a href="#contacto" class="cerrar-modal">&times;</a>
+        <h3>Aviso Legal (LSSI-CE)</h3>
+        <p><strong>1. Datos Identificativos del Titular:</strong></p>
+        <ul>
+            <li><strong>Titular:</strong> Fernando García Sánchez</li>
+            <li><strong>Actividad:</strong> Fontanería, calefacción e instalaciones térmicas en edificios.</li>
+            <li><strong>Acreditación Profesional:</strong> Instalador Habilitado RITE.</li>
+            <li><strong>Ubicación / Domicilio Profesional:</strong> Zaragoza, España.</li>
+            <li><strong>Contacto:</strong> A través del formulario web o teléfono corporativo indicado en la cabecera.</li>
+        </ul>
+        <p><strong>2. Propiedad Intelectual:</strong> Los contenidos, textos, estructura y diseño de este sitio web son propiedad exclusiva del titular o se utilizan con la debida autorización.</p>
+        <p><strong>3. Resolución de Litigios en Línea (Consumo UE):</strong> Conforme al Art. 14.1 del Reglamento (UE) 524/2013, se informa de que la Comisión Europea facilita una plataforma de resolución de litigios en línea disponible en: <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener">ec.europa.eu/consumers/odr/</a>.</p>
+        <a href="#contacto" class="btn-cerrar-legales">Entendido</a>
+    </div>
+</div>
+
+<!-- MODAL 2: Política de Cookies -->
+<div id="cookies-modal" class="modal-legal">
+    <div class="modal-contenido">
+        <a href="#contacto" class="cerrar-modal">&times;</a>
+        <h3>Política de Cookies</h3>
+        <p><strong>Uso de Cookies:</strong> Este sitio web corporativo de información estática <strong>NO utiliza cookies de rastreo publicitario, analíticas ni de perfilado de terceros</strong>.</p>
+        <p>Únicamente se navega mediante código estático optimizado para ofrecer una experiencia rápida, respetuosa con la privacidad del usuario y libre de elementos de seguimiento.</p>
+        <a href="#contacto" class="btn-cerrar-legales">Entendido</a>
+    </div>
+</div>
+
+<!-- Script para el funcionamiento del menú hamburguesa en móviles -->
+<script>
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
+
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('activo');
+    });
+
+    // Cierra el menú automáticamente al hacer clic en cualquier opción del menú móvil
+    document.querySelectorAll('.nav-menu a').forEach(enlace => {
+        enlace.addEventListener('click', () => {
+            navMenu.classList.remove('activo');
+        });
+    });
+</script>
 
 </body>
 </html>
