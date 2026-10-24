@@ -3,100 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fernando García Sánchez | Fontanería y Calefacción Zaragoza</title>
+    <title>Fernando García Sánchez | Fontanería y Calefacción en Zaragoza</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Encabezado -->
-    <header>
-        <div class="logo">
-            <h1>Fernando García Sánchez</h1>
-            <p>Fontanería y Calefacción en Zaragoza</p>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#experiencia">Por qué elegirnos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+   <!-- Encabezado y Navegación -->
+   <header>
+    <h1>Fernando García Sánchez</h1>
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#elegirnos">Por qué elegirnos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <!-- Banner Principal -->
-    <div id="inicio" class="hero">
-        <h2>Servicios Profesionales de Fontanería y Calefacción</h2>
-        <p>Instalaciones, reparaciones de averías, mantenimientos y certificados oficiales en Zaragoza.</p>
-        <a href="#contacto" class="boton-cta">Pedir Presupuesto Sin Compromiso</a>
+  <!-- Portada Principal a Ancho Completo -->
+<div id="inicio" class="portada-hero">
+    <h1>Servicios Profesionales de Fontanería y Calefacción</h1>
+    
+    <div class="portada-foto-full">
+        <img src="img/fernando1.jpg" alt="Fernando García Sánchez realizando soldadura de calefacción y fontanería en Zaragoza">
     </div>
+
+    <p>Soluciones rápidas, eficaces y garantizadas en Zaragoza</p>
+    
+    <a href="#contacto" class="btn-presupuesto">Solicitar Presupuesto</a>
+</div>
 
     <!-- Sección de Servicios -->
     <section id="servicios">
         <h2>Nuestros Servicios</h2>
         <div class="servicios-grid">
             <div class="tarjeta">
-                <h3>🛠️ Fontanería General</h3>
-                <p>Reparación de fugas, desatascos, cambio de tuberías, grifería y sanitarios.</p>
+                <h3>Fontanería General</h3>
+                <p>Reparación de averías, fugas de agua, sustitución de tuberías e instalación de grifería y sanitarios.</p>
             </div>
             <div class="tarjeta">
-                <h3>🔥 Calefacción y Radiadores</h3>
-                <p>Mantenimiento de circuitos, purgado, sustitución de radiadores y reparación de fugas.</p>
+                <h3>Calefacción y Calderas</h3>
+                <p>Instalación, mantenimiento y reparación de sistemas de calefacción, radiadores y calderas.</p>
             </div>
             <div class="tarjeta">
-                <h3>📜 Certificados y Boletines</h3>
-                <p>Revisiones de instalaciones con certificación oficial RITE para agua y calefacción.</p>
-            </div>
-            <div class="tarjeta">
-                <h3>❄️ Climatización y Reformas</h3>
-                <p>Instalación de aire acondicionado, reformas de baños y mantenimiento de equipos.</p>
+                <h3>Desatascos y Urgencias</h3>
+                <p>Servicio rápido para desatascos en tuberías, desagües y redes de agua comunitarias o privadas.</p>
             </div>
         </div>
     </section>
 
-    <!-- Por qué elegirnos -->
-    <section id="experiencia" class="seccion-destacada">
-        <h2>Garantía y Profesionalidad</h2>
-        <div class="puntos-clave">
-            <div class="punto">
-                <h4>+30 Años de Experiencia</h4>
-                <p>Trabajos ejecutados con oficio, precisión y máxima calidad técnica.</p>
+    <!-- Sección Por Qué Elegirnos -->
+    <section id="elegirnos">
+        <h2>Por qué elegirnos</h2>
+        <div class="servicios-grid">
+            <div class="tarjeta">
+                <h3>Experiencia Garantizada</h3>
+                <p>Más de 30 años de oficio realizando instalaciones y reparaciones con la máxima profesionalidad.</p>
             </div>
-            <div class="punto">
-                <h4>Presupuesto Transparente</h4>
-                <p>Valoración directa sin sorpresas ni costes ocultos en cada intervención.</p>
+            <div class="tarjeta">
+                <h3>Atención Directa</h3>
+                <p>Trato personal, sincero y sin intermediarios para ofrecerte la mejor solución a tu problema.</p>
             </div>
-            <div class="punto">
-                <h4>Atención en Zaragoza</h4>
-                <p>Cobertura de instalaciones y averías en Zaragoza capital y alrededores.</p>
+            <div class="tarjeta">
+                <h3>Rapidez y Eficacia</h3>
+                <p>Respuesta ágil ante cualquier avería de fontanería o calefacción en Zaragoza.</p>
             </div>
         </div>
     </section>
 
-    <!-- Formulario de Contacto -->
+    <!-- Sección de Contacto -->
     <section id="contacto">
-        <h2>Solicitar Presupuesto o Consulta</h2>
-        <form action="#" method="POST">
+        <h2>Solicita tu Presupuesto</h2>
+        <form>
             <div class="campo">
-                <label for="nombre">Nombre completo:</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre..." required>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
             </div>
             <div class="campo">
-                <label for="telefono">Teléfono de contacto:</label>
-                <input type="tel" id="telefono" name="telefono" placeholder="Ej: 600 000 000" required>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required placeholder="Tu número de teléfono">
             </div>
             <div class="campo">
-                <label for="servicio">Tipo de trabajo:</label>
-                <select id="servicio" name="servicio">
-                    <option value="fontaneria">Fontanería general</option>
-                    <option value="calefaccion">Calefacción / Radiadores</option>
-                    <option value="boletin">Boletín / Certificado RITE</option>
-                    <option value="otro">Otro tipo de avería o instalación</option>
-                </select>
-            </div>
-            <div class="campo">
-                <label for="mensaje">Detalles del aviso o consulta:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Explícanos brevemente qué necesitas..." required></textarea>
+                <label for="mensaje">Mensaje o avería:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Describe brevemente lo que necesitas..."></textarea>
             </div>
             <button type="submit">Enviar Solicitud</button>
         </form>
@@ -104,8 +94,13 @@
 
     <!-- Pie de página -->
     <footer>
-        <p>&copy; 2026 Fernando García Sánchez - Fontanería y Calefacción Zaragoza. Todos los derechos reservados.</p>
+        <p>&copy; 2026 Fernando García Sánchez - Fontanería y Calefacción en Zaragoza. Todos los derechos reservados.</p>
     </footer>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/34600000000?text=Hola,%20necesito%20información%20sobre%20un%20servicio%20de%20fontanería" class="btn-whatsapp" target="_blank" title="Contactar por WhatsApp">
+        💬 WhatsApp
+    </a>
 
 </body>
 </html>
