@@ -344,12 +344,14 @@
        ========================================================================== */
 
     // 1. Escuchamos cuando el usuario pulsa el botón de enviar en el formulario
+    
     document.getElementById("mi-formulario").addEventListener("submit", function(event) {
-        event.preventDefault(); 
+        event.preventDefault(); // Frena el salto automático
 
         const form = event.target;
         const data = new FormData(form);
 
+        // Envía el correo de forma silenciosa a Formspree
         fetch(form.action, {
             method: form.method,
             body: data,
@@ -358,6 +360,10 @@
             }
         }).then(response => {
             if (response.ok) {
+                // ¡Aquí está el cambio! Mostramos el aviso de agradecimiento y las 24 horas
+                alert("¡Muchas gracias! Hemos recibido tu solicitud correctamente. Nos pondremos en contacto contigo en menos de 24 horas.");
+                
+                // Al pulsar "Aceptar" en el aviso, la página vuelve a su estado inicial
                 window.location.href = "https://19681.github.io/mi-gestor-avisos/";
             } else {
                 alert("Hubo un problema al enviar el formulario. Por favor, inténtelo de nuevo.");
