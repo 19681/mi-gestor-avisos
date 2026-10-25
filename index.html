@@ -339,35 +339,43 @@
 </script>
 
 <script>
-    document.getElementById("mi-formulario").addEventListener("submit", function(event) {
-        event.preventDefault(); // Frena el envío normal
+    document.addEventListener("DOMContentLoaded", function() {
+        const formulario = document.getElementById("mi-formulario");
+        const modalGracias = document.getElementById("modal-gracias");
+        const botonCerrar = document.getElementById("cerrar-modal");
 
-        const formulario = this;
-        const formData = new FormData(formulario);
+        if (formulario) {
+            formulario.addEventListener("submit", function(event) {
+                event.preventDefault(); // Frena el envío normal
 
-        // Enviamos los datos a Formspree de forma limpia
-        fetch(formulario.action, {
-            method: formulario.method,
-            body: formData,
-            headers: {
-                'Accept': 'application/json'
-            }
-        }).then(response => {
-            if (response.ok) {
-                // Si todo va bien: vaciamos casillas y mostramos el cuadro verde elegante
-                formulario.reset();
-                document.getElementById("modal-gracias").style.display = "flex";
-            } else {
-                alert("Hubo un problema al enviar el formulario. Por favor, inténtelo de nuevo.");
-            }
-        }).catch(error => {
-            alert("Error de conexión. Compruebe su red e inténtelo más tarde.");
-        });
-    });
+                const formData = new FormData(formulario);
 
-    // Para cerrar el cuadro elegante al pulsar el botón Aceptar
-    document.getElementById("cerrar-modal").addEventListener("click", function() {
-        document.getElementById("modal-gracias").style.display = "none";
+                fetch(formulario.action, {
+                    method: formulario.method,
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                }).then(response => {
+                    if (response.ok) {
+                        formulario.reset();
+                        if (modalGracias) {
+                            modalGracias.style.display = "flex";
+                        }
+                    } else {
+                        alert("Hubo un problema al enviar el formulario. Por favor, inténtelo de nuevo.");
+                    }
+                }).catch(error => {
+                    alert("Error de conexión. Compruebe su red e inténtelo más tarde.");
+                });
+            });
+        }
+
+        if (botonCerrar && modalGracias) {
+            botonCerrar.addEventListener("click", function() {
+                modalGracias.style.display = "none";
+            });
+        }
     });
 </script>
 
