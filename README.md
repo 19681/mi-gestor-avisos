@@ -35,3 +35,10 @@ Sitio web *responsive* y moderno diseñado para ofrecer servicios profesionales 
 ├── index.html          # Estructura principal de la web
 ├── style.css           # Hojas de estilo y reglas responsive
 └── README.md           # Documentación del proyecto
+
+---
+
+## 👤 Autor
+
+Desarrollado por **Juan José Rodríguez Serrano**  
+*Zaragoza, España*
