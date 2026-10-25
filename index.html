@@ -339,6 +339,13 @@
 </script>
 
 <script>
+    /* ==========================================================
+       CONTROLADOR DEL FORMULARIO DE CONTACTO Y MODAL DE ÉXITO
+       - Espera a que la página cargue por completo (DOMContentLoaded).
+       - Intercepta el envío del formulario para evitar recargas.
+       - Envía los datos de forma silenciosa a Formspree.
+       - Muestra un cuadro modal elegante si todo sale bien.
+       ========================================================== */
     document.addEventListener("DOMContentLoaded", function() {
         const formulario = document.getElementById("mi-formulario");
         const modalGracias = document.getElementById("modal-gracias");
