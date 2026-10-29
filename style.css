@@ -102,8 +102,11 @@ section, .seccion-contenedor {
 /* --- Hero Integrado a Pantalla Completa Real --- */
 .hero-impacto {
     width: 100%;
-    min-height: 90vh; /* Ocupa el 90% de la altura total del navegador */
-    background: url('img/fernando1.jpg') no-repeat center center/cover;
+    min-height: 85vh;
+    background-image: url('img/fernando1.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; /* Esto es clave para que se ajuste al tamaño de la pantalla */
     position: relative;
     display: flex;
     align-items: center;
@@ -891,4 +894,20 @@ footer {
         padding: 0.8rem 2rem !important;
         border-bottom: 1px solid #1e293b !important;
     }
+
+
+/* --- Corrección específica para que el fondo del Hero se adapte al móvil --- */
+@media (max-width: 768px) {
+    .hero-impacto {
+        min-height: 50vh; /* Reducimos la altura en el móvil para que la foto no sea tan alargada */
+        background-size: contain; /* 'contain' hace que se vea la FOTO ENTERA sin recortes */
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    
+    .hero-capa-oscura {
+        min-height: 50vh;
+        padding: 2rem 1rem;
+    }
+}
 }
