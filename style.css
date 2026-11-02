@@ -218,13 +218,19 @@ section, .seccion-contenedor {
     gap: 2rem;
 }
 
+.elegirnos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
 .tarjeta {
     background: white;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.06);
     text-align: center;
-    border-top: 4px solid #3498db;
+    border-top: 4px solid #0056b3;
 }
 
 .tarjeta h3 {
