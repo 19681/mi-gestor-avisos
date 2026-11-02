@@ -911,3 +911,15 @@ footer {
     }
 }
 }
+
+/* Arreglo de las fotos de la galería */
+.galeria-img-placeholder {
+    height: 250px; /* Le ponemos una altura fija al cajón */
+    overflow: hidden; /* Corta lo que sobresalga de la foto */
+}
+
+.galeria-img-placeholder img {
+    width: 100%; /* Obliga a la foto a dar todo el ancho del cajón */
+    height: 100%; /* Obliga a la foto a dar todo el alto del cajón */
+    object-fit: cover; /* Ajusta la foto sin deformarla ni estirarla */
+}
